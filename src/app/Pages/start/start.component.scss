@@ -1,0 +1,185 @@
+@media only screen and (min-width: 769px) {
+  .card {
+    background: #fbfbfb 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 20px #00000029;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+    .inner-card {
+      width: 80%;
+      margin: auto;
+      padding: 10% 0;
+
+      form {
+        margin-top: 15%;
+
+        button {
+          margin-top: 10%;
+          width: 100%;
+          font: normal normal bold 16px var(--unnamed-font-family-roboto);
+          letter-spacing: 0.6px;
+          color: #ffffff;
+          background: transparent
+            linear-gradient(180deg, #ff6e4e 0%, #ff6e4e 100%) 0% 0% no-repeat
+            padding-box;
+          box-shadow: 0px 4px 8px #00000029;
+          border: none;
+          padding: 13px 0;
+          border-radius: 5px;
+        }
+
+        .form-control {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 10%;
+
+          select {
+            margin-top: 3%;
+            width: 100%;
+            border: 1px solid var(--unnamed-color-dedede);
+            background: #ffffff 0% 0% no-repeat padding-box;
+            border: 1px solid #dedede;
+            border-radius: 10px;
+            padding: 10px 20px;
+          }
+
+          .radio-item {
+            width: 40%;
+            display: inline-block;
+            position: relative;
+            padding: 0 6px;
+            margin: 10px 0 0 0;
+
+            input[type="radio"] {
+              display: none;
+            }
+
+            label:before {
+              content: " ";
+              display: inline-block;
+              position: relative;
+              top: 5px;
+              margin: 0 5px 0 0;
+              width: 15px;
+              height: 15px;
+              border-radius: 20px;
+              border: 1.5px solid var(--unnamed-color-707070);
+              background-color: transparent;
+            }
+            input[type="radio"]:checked + label:after {
+              border-radius: 11px;
+              width: 12px;
+              height: 12px;
+              position: absolute;
+              top: 8px;
+              left: 9px;
+              content: " ";
+              display: block;
+              background: var(--unnamed-color-38ccf5);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mobile & Tablet
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  .card {
+    background: #fbfbfb 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 20px #00000029;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+    .inner-card {
+      width: 80%;
+      margin: auto;
+      padding: 10% 0;
+
+      p {
+        &:first-child {
+          display: none;
+        }
+      }
+
+      form {
+        margin-top: 15%;
+
+        button {
+          margin-top: 10%;
+          width: 100%;
+          font: normal normal bold 16px var(--unnamed-font-family-roboto);
+          letter-spacing: 0.6px;
+          color: #ffffff;
+          background: transparent
+            linear-gradient(180deg, #ff6e4e 0%, #ff6e4e 100%) 0% 0% no-repeat
+            padding-box;
+          box-shadow: 0px 4px 8px #00000029;
+          border: none;
+          padding: 13px 0;
+          border-radius: 5px;
+        }
+
+        .form-control {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 10%;
+
+          select {
+            margin-top: 3%;
+            width: 100%;
+            border: 1px solid var(--unnamed-color-dedede);
+            background: #ffffff 0% 0% no-repeat padding-box;
+            border: 1px solid #dedede;
+            border-radius: 10px;
+            padding: 10px 20px;
+          }
+
+          .radio-item {
+            width: 40%;
+            display: inline-block;
+            position: relative;
+            padding: 0 6px;
+            margin: 10px 0 0 0;
+
+            input[type="radio"] {
+              display: none;
+            }
+
+            label:before {
+              content: " ";
+              display: inline-block;
+              // position: relative;
+              display: flex;
+              flex-direction: row;
+              top: 12%;
+              margin: 0 6% 0 45%;
+              // top: 5px;
+              // margin: 0 5px 0 0;
+              width: 15px;
+              height: 15px;
+              border-radius: 20px;
+              border: 1.5px solid var(--unnamed-color-707070);
+              background-color: transparent;
+            }
+            input[type="radio"]:checked + label:after {
+              border-radius: 11px;
+              width: 12px;
+              height: 12px;
+              // position: absolute;
+              // top: 8px;
+              // left: 9px;
+              position: relative;
+              top: -69%;
+              left: 48%;
+              content: " ";
+              display: block;
+              background: var(--unnamed-color-38ccf5);
+            }
+          }
+        }
+      }
+    }
+  }
+}

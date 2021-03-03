@@ -1,0 +1,17 @@
+<div class="main_container">
+    <app-header></app-header>
+    <app-body></app-body>
+    <app-footer></app-footer>
+</div>
+
+
+<div id="redux">
+    <h3>Redux Store Data</h3>
+    <div *ngFor="let item of store$ | async">
+        <p>Firstname: {{item.firstname}}</p>
+        <p>Lastname: {{item.lastname}}</p>
+        <p>Email: {{item.email}}</p>
+        <p>Phone Number: {{item.phone_number}}</p>
+        <p>Monthly Advertising Budget: {{item.monthly_advertising_budget}}</p>
+    </div>
+</div>

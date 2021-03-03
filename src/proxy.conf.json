@@ -1,0 +1,11 @@
+{
+    "/.netlify/functions/*": {
+        "target": "https://focused-elion-7a4786.netlify.app",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+    
+}
+
+

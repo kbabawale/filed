@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+  /* Colors: */
+  --unnamed-color-ff6e4e: #ff6e4e;
+  --unnamed-color-38ccf5: #38ccf5;
+  --unnamed-color-000000: #000000;
+  --unnamed-color-ffffff: #ffffff;
+  --unnamed-color-fbfbfb: #fbfbfb;
+  --unnamed-color-dedede: #dedede;
+  --unnamed-color-707070: #707070;
+  --unnamed-color-008cc9: #008cc9;
+  --unnamed-color-38ccf51c: #38ccf5;
+  --unnamed-color-0052ef: #0052ef;
+  --unnamed-color-e4e4e4: #e4e4e4;
+  --unnamed-color-0037ff80: #0037ff;
+  --unnamed-color-00509d: #00509d;
+  --unnamed-color-006cc9: #006cc9;
+
+  /* Font/text values */
+  --unnamed-font-family-roboto: "Roboto", sans-serif;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-medium: 500;
+  --unnamed-font-weight-bold: 700;
+  --unnamed-font-weight-light: 300;
+  --unnamed-font-weight-normal: 400;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-17: 17px;
+  --unnamed-font-size-18: 18px;
+  --unnamed-font-size-25: 25px;
+  --unnamed-font-size-28: 28px;
+  --unnamed-font-size-30: 30px;
+  --unnamed-font-size-34: 34px;
+  --unnamed-font-size-45: 45px;
+  --unnamed-font-size-54: 54px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-line-spacing-17: 17px;
+  --unnamed-line-spacing-19: 19px;
+  --unnamed-line-spacing-22: 22px;
+  --unnamed-line-spacing-30: 30px;
+  --unnamed-line-spacing-34: 34px;
+  --unnamed-line-spacing-41: 41px;
+  --unnamed-line-spacing-54: 54px;
+  --unnamed-line-spacing-65: 65px;
+}
+
+/* Character Styles */
+
+.roboto-—-28pt-h4 {
+  font-family: var(--unnamed-font-family-roboto);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: 23px;
+  line-height: 1.2;
+  letter-spacing: 1.56px;
+  color: var(--unnamed-color-000000);
+}
+.roboto-—-34pt-h3 {
+  font-family: var(--unnamed-font-family-roboto);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-medium);
+  font-size: var(--unnamed-font-size-34);
+  line-height: 1.5;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.roboto-—-34pt-bold {
+  font-family: var(--unnamed-font-family-roboto);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-30);
+  line-height: 1.5;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+}
+.roboto--regular {
+  font-weight: var(--unnamed-font-weight-light);
+  font-family: var(--unnamed-font-family-roboto);
+  font-style: var(--unnamed-font-style-normal);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  letter-spacing: 0px;
+  color: #000000;
+  font-size: var(--unnamed-font-size-18);
+}
+.roboto--regular-2 {
+  font-weight: var(--unnamed-font-weight-light);
+  font-family: var(--unnamed-font-family-roboto);
+  font-style: var(--unnamed-font-style-normal);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  letter-spacing: -0.7px;
+  color: #000000;
+  font-size: var(--unnamed-font-size-17);
+  line-height: 1.2;
+}
+.roboto--regular-bold {
+  font-weight: var(--unnamed-font-weight-medium);
+  font-family: var(--unnamed-font-family-roboto);
+  font-style: var(--unnamed-font-style-normal);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-000000);
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.align-center {
+  text-align: center;
+}

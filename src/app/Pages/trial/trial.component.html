@@ -1,0 +1,61 @@
+<div class="card">
+    <div class="inner-card">
+        <p class="align-center roboto-—-34pt-bold">We&apos;ll be in touch to get your trial set up.</p>
+        <p class="align-center roboto--regular">Fill out form</p>
+
+        <form [formGroup]="obForm">
+            <div class="form-group">
+                <div class="form-control">
+                    <p class="error" *ngIf="h.firstname.invalid && (h.firstname.dirty || h.firstname.touched)">
+                        Provide Firstname
+                    </p>
+                    <input type="text" formControlName="firstname" placeholder="First Name *" required />
+                </div>
+                <div class="form-control">
+                    <p class="error" *ngIf="h.lastname.invalid && (h.lastname.dirty || h.lastname.touched)">
+                        Provide Lastname
+                    </p>
+                    <input type="text" formControlName="lastname" placeholder="Last Name *" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-control">
+                    <p class="error" *ngIf="h.email.invalid && (h.email.dirty || h.email.touched)">
+                        Provide Email
+                    </p>
+                    <input type="email" formControlName="email" placeholder="Work Email *" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-control">
+                    <p class="error"
+                        *ngIf="h.monthly_advertising_budget.invalid && (h.monthly_advertising_budget.dirty || h.monthly_advertising_budget.touched)">
+                        Provide Budget
+                    </p>
+                    <p class="error"
+                        *ngIf="h.monthly_advertising_budget.errors?.pattern && (h.monthly_advertising_budget.dirty || h.monthly_advertising_budget.touched)">
+                        Numbers Only
+                    </p>
+                    <input type="text" formControlName="monthly_advertising_budget"
+                        placeholder="Monthly Advertising Budget *" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <p class="error" *ngIf="h.phonenumber.invalid && (h.phonenumber.dirty || h.phonenumber.touched)">
+                    Provide Phone Number (Min 10 digits)
+                </p>
+                <div class="form-control">
+                    <select name="" id="">
+                        <option value="+40">Romania (Roman)</option>
+                    </select>
+                    <input type="text" formControlName="phonenumber" placeholder="" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button (click)="submitForm()" [ngClass]="{disabled: obForm.invalid}" [disabled]="obForm.invalid"
+                    type="button">GET FREE TRIAL</button>
+            </div>
+        </form>
+    </div>
+</div>
